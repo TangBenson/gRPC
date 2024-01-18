@@ -1,0 +1,9 @@
+client的proto直接從grpc.server複製過來
+
+client要安裝一些套件
+
+postman測試時也要上傳proto
+
+gRPC使用自己的一套狀態碼（如OK, Cancelled, Unknown, InvalidArgument等），這些狀態碼用於表明RPC調用的結果。這些狀態碼不同於HTTP狀態碼，它們更具體地描述了RPC操作的結果。
+
+gRPC不使用傳統的HTTP方法（GET、POST等）。相反，它基於HTTP/2，定義了自己的一套方法來實現RPC調用。在gRPC中，每個服務方法都被定義為protobuf文件中的一個RPC操作。
